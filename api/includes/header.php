@@ -16,15 +16,15 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#e53935">
-    <link rel="apple-touch-icon" href="assets/images/icon-192.png">
+    <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
     
     <style>
     .main-header {
@@ -172,7 +172,7 @@ window.addEventListener('scroll', () => {
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
+        navigator.serviceWorker.register('/sw.js')
             .then(reg => console.log('Service Worker registered', reg))
             .catch(err => console.log('Service Worker not registered', err));
     });

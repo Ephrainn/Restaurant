@@ -1,7 +1,7 @@
 <?php
 // api/save_order.php
 header('Content-Type: application/json');
-require_once '../includes/db_connect.php';
+require_once 'includes/db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = JSON_decode(file_get_contents('php://input'), true);
